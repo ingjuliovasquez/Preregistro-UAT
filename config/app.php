@@ -167,6 +167,8 @@ return [
          Jenssegers\Date\DateServiceProvider::class,//pasar fechas en español
          Tightenco\Ziggy\ZiggyServiceProvider::class,//route en js
          Laraveles\Spanish\SpanishServiceProvider::class,//laravel en español
+         
+        SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,//generacion de qr
        
     ],
 
@@ -223,6 +225,7 @@ return [
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
         'Date' => Jenssegers\Date\Date::class,
+        'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,//generacion de qr
 
     ],
 
