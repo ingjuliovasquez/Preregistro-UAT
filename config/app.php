@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Mexico_City',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -150,7 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+ 
         /*
          * Application Service Providers...
          */
@@ -160,6 +160,14 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //Provider incluidos
+         Collective\Html\HtmlServiceProvider::class, //laravel colective
+         Barryvdh\DomPDF\ServiceProvider::class, // DomPDF generacion de pdf
+         UxWeb\SweetAlert\SweetAlertServiceProvider::class, // SweetAlerts
+         Jenssegers\Date\DateServiceProvider::class,//pasar fechas en español
+         Tightenco\Ziggy\ZiggyServiceProvider::class,//route en js
+         Laraveles\Spanish\SpanishServiceProvider::class,//laravel en español
+       
     ],
 
     /*
@@ -208,6 +216,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        //alias de paquetes
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+        'Date' => Jenssegers\Date\Date::class,
 
     ],
 
