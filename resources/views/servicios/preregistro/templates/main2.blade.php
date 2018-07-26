@@ -50,7 +50,7 @@
           $(this).val($(this).val().toUpperCase());
         });
     $("textarea").focusout(function() {
-      $(this).val($(this).val().toUpperCase());S
+      $(this).val($(this).val().toUpperCase());
     });
 
   
