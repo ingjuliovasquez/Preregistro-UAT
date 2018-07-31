@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -171,6 +172,8 @@ class PreregistroController extends Controller
                 $preregistro->telefono = $request->telefono1;
                 $preregistro->fechaNac = $request->fechaAltaEmpresa;
                 $preregistro->narracion = $request->narracion;
+                $preregistro->docIdentificacion = $request->docIdentificacionEmpresa;
+                $preregistro->numDocIdentificacion = $request->numDocIdentificacionEmpresa;
                 $preregistro->folio = $folio;
                 $preregistro->statusCancelacion = 0;
                 $preregistro->representanteLegal = $request->repLegal;
@@ -352,6 +355,8 @@ class PreregistroController extends Controller
                 $preregistro->telefono = $request->telefono1;
                 $preregistro->fechaNac = $request->fechaAltaEmpresa;
                 $preregistro->narracion = $request->narracion;
+                $preregistro->docIdentificacion = $request->docIdentificacionEmpresa;
+                $preregistro->numDocIdentificacion = $request->numDocIdentificacionEmpresa;
                 $preregistro->folio = $folio;
                 $preregistro->statusCancelacion = 0;
                 $preregistro->statusOrigen = 1;
