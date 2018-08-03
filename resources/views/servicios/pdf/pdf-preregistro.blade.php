@@ -80,15 +80,16 @@
                             <img src="{{ asset('img/logolight.png') }}" class="item">
                         </td>
                         <td colspan="2" >
-                            Folio para pre-registro
-                        </td>
+                            Sistema de Unidad de Ateción Temprana SUAT
+                         </td>
                     </tr>
                     <tr>
                         {{-- <td colspan="2" >
                             Aquí colocar una breve instrucción de ¿qué hacer con éste documento? asu fhqeifjiaeufeijwfai ewbfpwebfpab ewflakjwebnf ksjewbfakjewfb alkwejbfalkwebfalkewfb alkejfbakewb jfalwkejfbaef 
                         </td> --}}
                         <td colspan="2" >
-                            Este documento sirve para la solicitud de una cita en una de las unidades integrales mas cercanas para la orientación y/o asesoria sobre un asunto.  
+                             
+                            Presentar este documento o en su defecto el folio en una la unidad correspondiente para la orientación y/o asesoria sobre un asunto
                         </td>
                     </tr>
                 </tbody>
@@ -104,7 +105,7 @@
                 <tbody>
                     @if ($DatosRegistros->esEmpresa==1)
                     <tr>
-                        <td>Nombre:{{$DatosRegistros->nombre}}</td>
+                        <td>Nombre de la Empresa:{{$DatosRegistros->nombre}}</td>
                         <td rowspan="4" class="folio">{{ $DatosRegistros->folio}}</td>
                         <td rowspan="4"><img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->margin(0)->size(150)->generate(url('FormatoRegistro/'.$DatosRegistros->id))) !!}"></td>
                         {{-- <td>{!! QrCode::format('png')->margin(0)->size(100)->generate(url('/')) !!}</td> --}}
@@ -113,7 +114,8 @@
                         <td>RFC: {{$DatosRegistros->rfc}}</td>
                     </tr>
                     <tr>
-                        <td>Representante legal: {{$DatosRegistros->representanteLegal}}</td>
+                        <td>Representante legal: {{$DatosRegistros->representanteLegal." ".$DatosRegistros->primerAp." ".$DatosRegistros->segundoAp}}</td>
+                
                     </tr>
                     <tr>
                         <td>Asunto: {{$DatosRegistros->razon}} </td>
@@ -147,6 +149,12 @@
 
                     <tr class="text-muted">
                         <td>
+                            UAT XALAPA
+                           <br> Circuito Rafael Guízar y Valencia No. 707, Colonia Reserva Territorial C.P. 91096 Xalapa, Veracruz.
+                            Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs. 
+                            de Lunes a Viernes
+                        </td>
+                        {{-- <td>
                             <p>UIPJ XALAPA</p>
                             Circuito Rafael Guízar y Valencia No. 707, Colonia Reserva Territorial C.P. 91096 Xalapa, Veracruz.
                             <br>
@@ -159,14 +167,7 @@
                             <br>
                             Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs. 
                             de Lunes a Viernes
-                        </td>
-                        <td>
-                            <p>UIPJ XALAPA</p>
-                            Circuito Rafael Guízar y Valencia No. 707, Colonia Reserva Territorial C.P. 91096 Xalapa, Veracruz.
-                            <br>
-                            Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs. 
-                            de Lunes a Viernes
-                        </td>
+                        </td> --}}
                         
                     </tr>
                     <tr>
@@ -176,7 +177,19 @@
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <small class="text-muted">El presente documento no tiene valor fiscal.</small>
+                            <small class="text-muted">La Fiscalía General del Estado de Veracruz, es la responsable del tratamiento de los datos personales que nos proporcione.
+                                Los datos personales que recabamos a Usted, los utilizaremos para las siguientes finalidades: 
+                               <br> •	Alimentar la base de datos del sistema electrónico generado de Citas para Atención en las Unidades de Atención Temprana de la Fiscalía General del Estado.
+                               <br> •	Registrar la solicitud de cita para atención en cualquiera de las Unidades de Atención Temprana. 
+                               <br> •	Para generar el código de registro único y alfanumérico asignado a la cita solicitada.
+                               <br> •	Para generar el código QR el cual será.
+                              <br>  •	Para generar el comprobante de cita correspondiente.
+                                De manera adicional, utilizaremos su información personal para la siguiente finalidad que nos permite y facilita brindarle una mejor atención: 
+                                •	Generación de informes estadísticos.
+                                En caso de que no desee que sus datos personales sean tratados para las finalidades  adicionales, Usted puede manifestarlo al correo electrónico direcciondetransparencia@fiscaliaveracruz.gob.mx   
+                                Le informamos que sus datos personales  NO son compartidos con personas, empresas, organizaciones y autoridades distintas al sujeto obligado, salvo que sean necesarias para atender requerimientos de información de una autoridad competente, debidamente fundados y motivados.
+                                Para mayor información acerca del tratamiento y de los derechos que puede hacer valer, usted puede acceder al aviso de privacidad integral a través de la dirección electrónica: http://fiscaliaveracruz.gob.mx/.
+                                </small>
                         </td>
                     </tr>
                 </tbody>
