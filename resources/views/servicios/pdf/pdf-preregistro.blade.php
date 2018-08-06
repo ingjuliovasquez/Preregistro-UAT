@@ -152,7 +152,6 @@
                             UAT XALAPA
                            <br> Circuito Rafael Guízar y Valencia No. 707, Colonia Reserva Territorial C.P. 91096 Xalapa, Veracruz.
                             Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs. 
-                            de Lunes a Viernes
                         </td>
                         {{-- <td>
                             <p>UIPJ XALAPA</p>
