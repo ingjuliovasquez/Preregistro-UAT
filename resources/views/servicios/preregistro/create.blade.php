@@ -28,6 +28,14 @@
 		p {
 		font-family: "Arial", serif;
 		}
+		/* estilo para el re captcha */
+		.text-xs-center {
+        text-align: center;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
 		
 	</style>
 @extends('servicios.preregistro.templates.form2')
@@ -97,6 +105,11 @@
 					@else --}}
 					{{ Form::textarea('narracion', old('narracion'), ['class' => 'form-control form-control-sm', 'size' => '30x10', 'data-validation'=>'length', 'data-validation-length'=>'20-5000','required']) }}
 					{{-- @endif --}}
+					<div class="text-xs-center">
+						<br>
+						<div class="g-recaptcha" id="recaptcha" data-sitekey="6LeJ02gUAAAAAAKJJiwX_XZreNv9wn9Hj7bkO61H"></div>
+						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
+					</div>
 				
 				</div>
 			</div>
@@ -133,6 +146,7 @@
 	<script src="{{ asset('js/rfcMoral.js') }}"></script>
 	<script src="{{ asset('js/validar-pre.js') }}"></script>
 	<script src="{{ asset('js/jquery.disableAutoFill.min.js')}}" ></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	
 	{{-- <script src="{{ asset('js/rfcMoral.js') }}"></script> --}}
 	<script>

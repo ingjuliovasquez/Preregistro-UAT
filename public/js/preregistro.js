@@ -223,7 +223,8 @@ function mostrarpersonal(){
     $("#numExterno1").prop('disabled', true); 
     $("#idRazon1").prop('disabled',true); 
     $("#primerAp2").prop('disabled', true);   
-    $("#segundoAp2").prop('disabled', true);   
+    $("#segundoAp2").prop('disabled', true); 
+    $("#recaptcha").prop('disabled', false);  
     
     //Datos personales requeridos de Persona Física
     $('#estadoCivil').prop('disabled', false);
@@ -273,6 +274,7 @@ function mostrarmoral(){
     $("#calle1").prop('disabled', false);   
     $("#numExterno1").prop('disabled', false); 
      $("#idRazon1").prop('disabled', false); 
+     $("#recaptcha").prop('disabled', false);
     
     //Datos personales no requeridos de Persona Física
     $('#estadoCivil').prop('disabled', true);
