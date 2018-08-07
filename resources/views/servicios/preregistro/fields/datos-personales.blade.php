@@ -70,7 +70,7 @@
 				</div>
 			<div class="col">
 					{!! Form::label('homo2', 'Homo', ['class' => 'col-form-label-sm']) !!}
-				{!! Form::text('homo2', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el R.F.C.','data-validation'=>'required' ,'data-validation-length'=>'8','data-validation-error-msg'=>'RFC inválido' ,'required']) !!}
+				{!! Form::text('homo2', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el R.F.C.' ,'data-validation-length'=>'8','data-validation-error-msg'=>'RFC inválido']) !!}
 			</div>
 		</div>
 	</div>
