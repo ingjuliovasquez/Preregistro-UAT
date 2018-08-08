@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/preregistro', 'PreregistroController@create')->name('preregistro.create'); //ver formulario
 Route::post('/preregistro/store', 'PreregistroController@store')->name('preregistro.store'); //registar
 
+Route::get('/direcciones', 'PreregistroController@direcciones')->name('direcciones.uat');
+Route::get('/filtro-uat', 'PreregistroController@filtroUat')->name('filtro.uat');
+
 /*--------------------Rutas para generar el RFC----------------------------------*/
 Route::post('rfc-moral', 'PreregistroAuxController@rfcMoral')->name('rfc.moral');
 Route::post('rfc-fisico', 'PreregistroAuxController@rfcFisico')->name('rfc.fisico');
@@ -39,3 +42,5 @@ Route::get('listas/{id}', 'RegisterController@getListas')->name('get.listas');
 Route::get('fiscales/{id}', 'RegisterController@getFiscales')->name('get.fiscales');
 /********************generar pdf**********************************/
 Route::get('FormatoRegistro/{id}', 'PdfController@datos');
+
+
