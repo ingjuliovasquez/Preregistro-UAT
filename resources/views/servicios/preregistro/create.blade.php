@@ -106,10 +106,10 @@
 					<div class="col">   
 						<div class="text-center">
 							<br>
-								<a href="http://fiscaliaveracruz.gob.mx/" title="" class="btn btn-primary">Cancelar</a>
-							
-								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'cargando'))!!}
-								{{-- {!!Form::submit('Prueba',array('class' => 'btn btn-primary ', 'id'=>'prueba'))!!} --}}
+								<a href="http://fiscaliaveracruz.gob.mx/" title="" id="btnCancel" class="btn btn-primary">Cancelar</a>
+								<button  type="submit" id="guardar" class="btn  btn-primary"><i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button>
+								{{-- {!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> --}}
+								{{-- {!!Form::submit('Prueba',array('class' => 'btn btn-primary ', 'id'=>'prueba'))  'id'=>'cargando'!!} --}}
 								{{-- <button id="prueba" type="button" class="btn btn-primary">prueba</button> --}}
 							<br>
 						
@@ -157,6 +157,43 @@
         	});
 		});
 
+
+
 	</script>
+
+<script>
+	$('#form.registro').submit(function (e, params) {
+		   // $('#icon').show();
+		   var localParams = params || {};
+   
+		   if (!localParams.send) {
+			   e.preventDefault();
+   
+		   }
+   
+	   swal({
+				   title: "Confirmación de guardado",
+				   text: "¿Seguro que los datos son correctos?",
+				   type: "info",
+				   showCancelButton: true,
+				   confirmButtonText: "Si",
+				   confirmButtonColor:"#424242",
+				   cancelButtonText: "No",
+				   closeOnConfirm: true
+			   }, function (isContinuar) {
+				   if (isContinuar) {
+					   $('#icon').show();
+					   $('#guardar').attr('disabled','true');
+					   $('#btnCancel').attr('disabled','true');
+					   $('#btnCancel').removeAttr('href');
+					   $(e.currentTarget).trigger(e.type, { 'send': true });
+				   } else {              
+					   $('#icon').hide();
+					   $('#guardar').removeAttr('disabled');
+					   $('#btnCancel').attr('href','{{url('/solicitudes')}}');
+			   }
+		   });
+   });
+   </script>
 		
 @endpush

@@ -151,7 +151,7 @@
                         <td>
                             UAT XALAPA
                            <br> Circuito Rafael Guízar y Valencia No. 707, Colonia Reserva Territorial C.P. 91096 Xalapa, Veracruz.
-                            Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs. 
+                            Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs.  
                         </td>
                         {{-- <td>
                             <p>UIPJ XALAPA</p>
@@ -198,3 +198,9 @@
 </html>
 
 
+{{-- 
+    
+    Salmos 1:1-3
+    La persona que lee regularmente la Palabra de Dios es
+     “como un árbol plantado al lado de corrientes de agua, que da su propio fruto en su estación y cuyo follaje no se marchita, y todo lo que haga tendrá éxito
+    --}}
