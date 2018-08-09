@@ -444,4 +444,38 @@ class PreregistroController extends Controller
 
     }
 
+    public function direcciones(){
+
+        $unidades=DB::table('unidad')
+        ->select('descripcion','abreviacion','direccion','telefono')
+        ->where('telefono','!=',"")
+        ->orderBy('idZona','ASC')
+        ->get();
+    // dd($unidades);
+        foreach ($unidades as $unidad) {
+            $arr = explode(" ",$unidad->descripcion);
+            $aux=9;
+            $unidad->descripcion='';
+            while(count($arr)-1 >= $aux){
+                $unidad->descripcion=$unidad->descripcion.' '.$arr[$aux];
+                $aux=$aux+1;
+            }
+            // dd($ciudad);
+        }
+            
+           // dd($ciudad);
+        
+        return view('servicios.preregistro.direcciones-uat')
+        // ->with('ciudad',$ciudad)
+        ->with('unidades',$unidades);
+    }
+
+    public function filtroUat(){
+
+
+        
+    }
+
+
+
 }
