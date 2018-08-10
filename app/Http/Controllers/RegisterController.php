@@ -13,6 +13,46 @@ use DB;
 
 class RegisterController extends Controller
 {
+    public function getDelitoAjax($id){
+     
+        
+        // $estado = CatMunicipio::where('id', $id)
+        // ->select('cat_municipio.idEstado')
+        // ->first();
+
+        // $municipios = CatMunicipio::where('idEstado', $id)
+        // ->orderBy('nombre', 'ASC')->pluck('nombre', 'id');
+        
+        $localidad = CatLocalidad::where('idMunicipio', $id)
+        ->orderBy('nombre', 'ASC')->pluck('nombre', 'id');
+
+        $colonia = CatColonia::where('idMunicipio', $id)
+        ->orderBy('nombre', 'ASC')->pluck('nombre', 'id');
+
+        $cp = CatColonia::where('idMunicipio', $id)
+        ->orderBy('CodigoPostal', 'ASC')->pluck('CodigoPostal', 'id');
+        
+        // $localidad = CatLocalidad::localidades($id);
+        // $colonia = CatColonia::colonias2($id);
+        // $cop = CatColonia::codigos($id);
+       
+
+        $data = array(
+            /* 'estado'=>$estado,  'municipios'=>$municipios,*/
+            'localidad'=>$localidad, 'colonia'=>$colonia, 'cp'=>$cp);
+
+        return response()->json($data);
+    }
+   
+
+
+
+
+
+
+
+
+
    
     /*-----Métodos para obetener catálogos-----*/
     public function getMunicipios(Request $request, $id){

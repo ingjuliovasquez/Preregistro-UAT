@@ -43,4 +43,4 @@ Route::get('fiscales/{id}', 'RegisterController@getFiscales')->name('get.fiscale
 /********************generar pdf**********************************/
 Route::get('FormatoRegistro/{id}', 'PdfController@datos');
 
-
+Route::get('getDelitoAjax/{id}', 'RegisterController@getDelitoAjax')->name("getDelitoAjax");
