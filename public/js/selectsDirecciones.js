@@ -140,7 +140,74 @@ $("#idMunicipio").change(function(event){
 		
 	});
 		
-
+	$("#idEstado2").change(function(event){
+		if(event.target.value!=""){
+			$.get(route('get.municipio', event.target.value), function(response, estado){
+				$("#idMunicipio2").empty();
+				$("#idMunicipio2").append("<option value=''>Seleccione un municipio</option>");
+				for(i=0; i<response.length; i++){
+					$("#idMunicipio2").append("<option value='"+response[i].id+"'> "+response[i].nombre+"</option>");
+				}
+			});
+		}
+	});
+	
+	$("#idMunicipio2").change(function(event){
+		// municipio = $(this).val();
+		
+			$.ajax({
+				//url : "editar/"+IdFilaTabla,
+				url: route('getDelitoAjax',event.target.value),
+	
+				type : 'GET',
+				success : function(json) {
+				
+		
+					// $("#idEstado").val(json.estado.idEstado).trigger('change.select2');
+		
+		
+					var html3 = "<option value=''>Seleccione un municipio</option>";
+					// for (var clave in json.municipios){
+					// 	 if (json.municipios.hasOwnProperty(clave)) {
+					// 	   html3 += "<option value='"+clave+"'> "+json.municipios[clave]+"</option>";
+					// 	 }
+					// }
+					// $('#idMunicipio').html(html3);
+					console.log("hola");
+					
+					 
+					 var html4 = "<option value=''>Seleccione una localidad</option>";
+					 for (var clave in json.localidad){
+						 if (json.localidad.hasOwnProperty(clave)) {
+						   html4 += "<option value='"+clave+"'> "+json.localidad[clave]+"</option>";
+						 }
+					}
+					 $('#idLocalidad2').html(html4);
+		
+		
+					 var html5 = "<option value=''>Seleccione una colonia</option>";
+					 for (var clave in json.colonia){
+						 if (json.colonia.hasOwnProperty(clave)) {
+						   html5 += "<option value='"+clave+"'> "+json.colonia[clave]+"</option>";
+						 }
+					}
+					 $('#idColonia2').html(html5);
+		
+					 
+					 var html6 = "<option value=''>Seleccione un codigo postal</option>";
+					 for (var clave in json.cp){
+						 if (json.cp.hasOwnProperty(clave)) {
+						   html6 += "<option value='"+clave+"'> "+json.cp[clave]+"</option>";
+						 }
+					}
+					$('#cp2').html(html6);
+				},
+		
+				error : function(xhr, status) {
+				}
+			});
+			
+		});
 
 
 		// $.get(route('get.listas', event.target.value), function(response, municipio){

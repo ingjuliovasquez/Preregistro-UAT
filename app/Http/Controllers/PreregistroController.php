@@ -109,6 +109,7 @@ class PreregistroController extends Controller
                 $preregistro->idEstadoCivil = $request->estadoCivil;
                 $preregistro->idEscolaridad = $request->escolaridad;
                 $preregistro->idOcupacion = $request->ocupacion;
+                
                 if (!is_null($request->rfc2)){
                     $preregistro->rfc = $request->rfc2 . $request->homo2;
                 }
@@ -122,11 +123,18 @@ class PreregistroController extends Controller
                 if (!is_null($request->tipoActa)){
                     $preregistro->tipoActa = (!is_null($request->otro))?$request->otro:$request->tipoActa;
                 }
-                
-               
+
+                $token = $request->input('g-recaptcha-response');
+              
+                if($token){
                 $preregistro->save();
                 $id = $preregistro->id;
-                
+                }else{
+                    Alert::error('Se presentó un problema al guardar los datos, debe seleccionar un captcha', 'Error');
+                    return back()->withInput();
+                }
+               
+
                 if (!is_null($request->correo2)) {
                     $correo2 = $request->correo2;
                     session(['idpreregistro' => $id]);
@@ -180,11 +188,22 @@ class PreregistroController extends Controller
                 if (!is_null($request->tipoActaEmpresa)){
                     $preregistro->tipoActa = (!is_null($request->otroEmpresa))?$request->otroEmpresa:$request->tipoActaEmpresa;
                 }
+                $token = $request->input('g-recaptcha-response');
+              
                 
-                $preregistro->save();
-                $id = $preregistro->id;
+                if($token){
+                    $preregistro->save();
+                    $id = $preregistro->id;
+                    }else{
+                        Alert::warning('Se presentó un problema al guardar los datos, debe seleccionar un captcha', 'Error');
+                       
+                         return back()->withInput();
+                    }
+            
+          
                 
                 
+                //  dd($preregistro);
                 
             }
             // return redirect('correo');
