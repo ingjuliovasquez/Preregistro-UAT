@@ -26,6 +26,7 @@
     <script src="{{asset('js/semaforos.js')}}"></script>  
     <script src="{{asset('js/selectsDirecciones.js')}}"></script>  
     <script src="{{asset('js/funciones.js')}}"></script>
+    {{-- <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script> --}}
     <script>
         
 
@@ -36,9 +37,9 @@
         }
     });
 
-    $.validate({
-        lang : 'es'
-    });
+    // $.validate({
+    //     lang : 'es'
+    // });
 
 
     </script>
