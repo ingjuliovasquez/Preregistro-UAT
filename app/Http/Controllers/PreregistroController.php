@@ -130,7 +130,7 @@ class PreregistroController extends Controller
                 $preregistro->save();
                 $id = $preregistro->id;
                 }else{
-                    Alert::error('Se presentó un problema al guardar los datos, debe seleccionar un captcha', 'Error');
+                    Alert::error('Se presentó un problema al guardar los datos, debe seleccionar un captcha', 'Error')->persistent("Aceptar");
                     return back()->withInput();
                 }
                
@@ -195,7 +195,7 @@ class PreregistroController extends Controller
                     $preregistro->save();
                     $id = $preregistro->id;
                     }else{
-                        Alert::warning('Se presentó un problema al guardar los datos, debe seleccionar un captcha', 'Error');
+                        Alert::warning('Se presentó un problema al guardar los datos, debe seleccionar un captcha', 'Error')->persistent("Aceptar");
                        
                          return back()->withInput();
                     }
