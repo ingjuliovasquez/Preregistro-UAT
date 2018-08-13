@@ -107,7 +107,7 @@
 					{{-- @endif --}}
 					<div class="text-xs-center">
 						<br>
-						<div class="g-recaptcha" id="recaptcha" data-sitekey="6LeJ02gUAAAAAAKJJiwX_XZreNv9wn9Hj7bkO61H"></div>
+						<div class="g-recaptcha" id="recaptcha" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
 						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
 					</div>
 				
@@ -232,5 +232,19 @@ $(document).ready(function(){
 // 		   });
 //    });
    </script>
+
+<script>
+   $(function() {
+	$('#form.registro').submit(function (event) { 
+		var verified = grecaptcha.getResponse();
+		if (verified.lenght === 0){
+            event.preventDefault();
+		} 
+   });
+
+});
+
+
+ </script>
 		
 @endpush
