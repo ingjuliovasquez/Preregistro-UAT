@@ -121,8 +121,8 @@
 							<br>
 								<a href="http://fiscaliaveracruz.gob.mx/" title="" id="btnCancel" class="btn btn-primary">Cancelar</a>
 								{{-- <button  type="submit" id="guardar" class="btn  btn-primary"><i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
-								<button  type="button" id="guardar1"  class="btn  btn-primary"><i id="icon2" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button>
-								{{-- {!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> --}}
+								{{-- <button  type="button" id="guardar1"  class="btn  btn-primary"><i id="icon2" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
+								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i>
 								{{-- {!!Form::submit('Prueba',array('class' => 'btn btn-primary ', 'id'=>'prueba'))  'id'=>'cargando'!!} --}}
 								{{-- <button id="prueba" type="button" class="btn btn-primary">prueba</button> --}}
 							<br>
