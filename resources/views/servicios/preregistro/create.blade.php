@@ -107,9 +107,12 @@
 					{{-- @endif --}}
 					<div class="text-xs-center">
 						<br>
-						<div class="g-recaptcha" id="recaptcha" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
+						<div class="g-recaptcha" id="recaptcha" required placeholder="seleccione" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
 						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
 					</div>
+					{{-- <br><label for="condiciones">Acepta las <a href="pagina_condiciones.html">condiciones</a> y blah blah</label><input type="checkbox" name="condiciones" /> --}}
+					<input type="checkbox" id="c1" name="terms" required >
+                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank">Política de Privacidad</a></span></label>
 				
 				</div>
 			</div>
@@ -175,6 +178,8 @@
 
 
 	</script>
+
+
 
 <script>
 	
