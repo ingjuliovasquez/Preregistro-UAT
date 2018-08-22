@@ -20,10 +20,14 @@
 				{{-- @endif --}}
 			</label>
 		</div>
-		<div class="invalid-feedback">
-			Debes seleccionar alguno.
-		</div>
-	</div>
+		{{-- <input  name="aviso" value="1" id="tcb-consent-tve-u-163acd989eb" data-required="1" type="checkbox"><label for="tcb-consent-tve-u-163acd989eb"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank">Política de Privacidad</a></span></label> --}}
+		
+
+
+		<input type="checkbox">
+
+<input type="checkbox" id="c1" name="cc">
+<label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank">Política de Privacidad</a></span></label>
 
 
 		
