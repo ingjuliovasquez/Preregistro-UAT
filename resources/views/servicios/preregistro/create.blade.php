@@ -118,13 +118,13 @@
 					{{-- @endif --}}
 					<div class="text-xs-center">
 						<br>
-						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="debe seleccionar el campo captcha!" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
+						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo no soy un robot!" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
 						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
 					</div>
 					<div class="text-xs-center">
 							<br>
 					<input type="checkbox" id="c1" name="terms" required value="1">
-                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto y he leido la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="debe seleccionar  aceptar!">Política de Privacidad </a></span></label>
+                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto y he leido la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo de aceptar las politicas de privacidad!">Política de Privacidad </a></span></label>
 				    </div>
 				</div>
 			</div>

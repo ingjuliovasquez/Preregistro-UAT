@@ -184,7 +184,7 @@ Violencia familiar equiparada
                     <div class="card-header" role="tab" id="headingThree">
                         <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <h5 class="mb-0">
-                                Delitos <i class="fa fa-angle-down rotate-icon"></i>
+                                Asesoría Jurídica <i class="fa fa-angle-down rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -192,25 +192,49 @@ Violencia familiar equiparada
                     <!-- Card body -->
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-								Delitos que puedes denunciar por este medio:
-							
-							
-                      <option value="1">White</option>
-                      <option value="2">Black</option>
-					  <option value="3">Pink</option>
-					  <option value="1">White</option>
-                      <option value="2">Black</option>
-					  <option value="3">Pink</option>
-					  <option value="1">White</option>
-                      <option value="2">Black</option>
-					  <option value="3">Pink</option>
-					  <option value="1">White</option>
-                      <option value="2">Black</option>
-                      <option value="3">Pink</option>
+                            El servicio de Asesoría Jurídica se proporciona a las víctimas del delito y a la población que lo solicite, con el fin de orientar en las diversas gestiones o procedimientos jurídicos que requieran.<br>
+							<br>
+                            <strong>Opciones para realizar el trámite</strong> <br>
+                            presencial
+                            <br>
+                            <strong>Información complementaria</strong> <br>
+                            En caso de que la problemática no sea competencia de esta Unidad Administrativa, se canaliza a la instancia correspondiente mediante oficio.
+                            <br>
+                            <strong>Costo</strong> <br>
+                            Gratuito.
+                     
                         </div>
                     </div>
                 </div>
                 <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThree">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h5 class="mb-0">
+                                Constancia de Hechos por Extravío <i class="fa fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            El servicio de Asesoría Jurídica se proporciona a las víctimas del delito y a la población que lo solicite, con el fin de orientar en las diversas gestiones o procedimientos jurídicos que requieran.<br>
+							<br>
+                            <strong>Opciones para realizar el trámite</strong> <br>
+                            presencial
+                            <br>
+                            <strong>Información complementaria</strong> <br>
+                            En caso de que la problemática no sea competencia de esta Unidad Administrativa, se canaliza a la instancia correspondiente mediante oficio.
+                            <br>
+                            <strong>Costo</strong> <br>
+                            Gratuito.
+                     
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--/.Accordion wrapper-->
 
