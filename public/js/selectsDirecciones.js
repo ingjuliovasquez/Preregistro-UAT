@@ -105,7 +105,7 @@ $("#idMunicipio").change(function(event){
 				// 	 }
 				// }
 				// $('#idMunicipio').html(html3);
-				console.log("hola");
+		
 				
 				 
 				 var html4 = "<option value=''>Seleccione una localidad</option>";
@@ -125,14 +125,22 @@ $("#idMunicipio").change(function(event){
 				}
 				 $('#idColonia').html(html5);
 	
-				 
-				 var html6 = "<option value=''>Seleccione un codigo postal</option>";
+				 var html6 = '';
 				 for (var clave in json.cp){
 					 if (json.cp.hasOwnProperty(clave)) {
 					   html6 += "<option value='"+clave+"'> "+json.cp[clave]+"</option>";
 					 }
 				}
-				$('#cp').html(html6);
+				 $('#cp').html(html6);			
+				 console.log("hol         a");
+
+				//  var html6 = "<option value=''>Seleccione un codigo postal</option>";
+				//  for (var clave in json.cp){
+				// 	 if (json.cp.hasOwnProperty(clave)) {
+				// 	   html6 += "<option value='"+clave+"'> "+json.cp[clave]+"</option>";
+				// 	 }
+				// }
+				// $('#cp').html(html6);
 			},
 	
 			error : function(xhr, status) {
@@ -141,6 +149,14 @@ $("#idMunicipio").change(function(event){
 		
 	});
 		
+	// $("#idColonia").change(function(event){
+	// 	if(event.target.value!=""){
+	// 		$.get(route('get.codigo2', event.target.value), function(response, colonia){
+	// 			$("#cp").empty();
+	// 			$("#cp").append("<option value='"+response[0].id+"'> "+response[0].codigoPostal+"</option>");
+	// 		});
+	// 	}
+	// });
 
 //Persona Física
 $("#idEstado2").change(function(event){
