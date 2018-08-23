@@ -12,13 +12,23 @@
 		z-index: 1000;
 		
 	}
-	/* .loadPage p{
-		display: block;
 		
-		font-size: 30px;
-		margin: auto;
-			}
-	 */
+    .modal-body {
+	   width: 100%;
+	   height:100vh;
+       background: rgba(0, 0, 0,0.5);
+	   position:absolute ;
+	   top: 0;
+	   left: 0; 
+	    display: flex; 
+
+	   
+	   /* visibility: hidden;
+	   opacity: 0; */
+
+}
+
+
 		.oculto{
 			display: none;
 		}
@@ -38,13 +48,14 @@
     }
 		
 	</style>
+	
 @extends('servicios.preregistro.templates.form2')
 
 @section('content')
 @if ($errors->any())
 	<div class="alert alert-danger">
 		@php
-		$form = oldForm();
+		// $form = oldForm();
 		@endphp
 		<ul>
 			@foreach ($errors->all() as $error)
@@ -107,13 +118,14 @@
 					{{-- @endif --}}
 					<div class="text-xs-center">
 						<br>
-						<div class="g-recaptcha" id="recaptcha" required placeholder="seleccione" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
+						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="debe seleccionar el campo captcha!" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
 						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
 					</div>
-					{{-- <br><label for="condiciones">Acepta las <a href="pagina_condiciones.html">condiciones</a> y blah blah</label><input type="checkbox" name="condiciones" /> --}}
-					<input type="checkbox" id="c1" name="terms" required >
-                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank">Política de Privacidad</a></span></label>
-				
+					<div class="text-xs-center">
+							<br>
+					<input type="checkbox" id="c1" name="terms" required value="1">
+                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto y he leido la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="debe seleccionar  aceptar!">Política de Privacidad </a></span></label>
+				    </div>
 				</div>
 			</div>
 			<div class="boxtwo">
@@ -122,7 +134,7 @@
 					<div class="col">   
 						<div class="text-center">
 							<br>
-								<a href="http://fiscaliaveracruz.gob.mx/" title="" id="btnCancel" class="btn btn-primary">Cancelar</a>
+								<a href="http://fiscaliaveracruz.gob.mx/"id="btnCancel" class="btn btn-primary">Cancelar</a>
 								{{-- <button  type="submit" id="guardar" class="btn  btn-primary"><i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
 								{{-- <button  type="button" id="guardar1"  class="btn  btn-primary"><i id="icon2" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
 								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i>
@@ -137,11 +149,12 @@
 		</div>
 	</div>
 		
-
+	
 
 	</div>
  {!!Form::close()!!}
 @endsection
+
 @push('scripts')
 
 	<script src="{{asset('js/preregistro.js')}}"></script> 
@@ -178,10 +191,23 @@
 
 
 	</script>
-
+<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>
 
 
 <script>
+$(document).ready(function(){
+  $('#modalQuickView').modal('show')
+});
+
+
+</script>
+
+	<script>
+			
 	
 $(document).ready(function(){
 
