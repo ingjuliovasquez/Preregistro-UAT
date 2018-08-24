@@ -181,7 +181,7 @@
                                <br> •	Alimentar la base de datos del sistema electrónico generado de Citas para Atención en las Unidades de Atención Temprana de la Fiscalía General del Estado.
                                <br> •	Registrar la solicitud de cita para atención en cualquiera de las Unidades de Atención Temprana. 
                                <br> •	Para generar el código de registro único y alfanumérico asignado a la cita solicitada.
-                               <br> •	Para generar el código QR el cual será.
+                               <br> •	Para generar el código QR el cual almacenara información de lo registrado en la plataforma.
                               <br>  •	Para generar el comprobante de cita correspondiente.
                                 De manera adicional, utilizaremos su información personal para la siguiente finalidad que nos permite y facilita brindarle una mejor atención: 
                                 •	Generación de informes estadísticos.
