@@ -90,25 +90,25 @@ Violencia familiar equiparada
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(23).jpg" alt="First slide">
+                        <img class="d-block w-100" src="https://rawcdn.githack.com/Romaincks/assets/master/img/logo-fge-svg.svg" alt="First slide">
                     </div>
-                    <div class="carousel-item">
+                    {{-- <div class="carousel-item">
                         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(24).jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(25).jpg" alt="Third slide">
-                    </div>
+                    </div> --}}
                 </div>
                 <!--/.Slides-->
                 <!--Controls-->
-                <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                {{-- <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+                </a> --}}
                 <!--/.Controls-->
                 {{-- <ol class="carousel-indicators">
                     <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(23).jpg" class="img-fluid"></li>
@@ -149,7 +149,7 @@ Violencia familiar equiparada
                         <div class="card-body">
 								La Fiscalía General del Estado de veracruz, mediante su Unidad de Orientación, Atención y Resolución Inmediata, ofrece esta moderna plataforma para ayudarle en su orientacion/asesoria	o en el tramite de constncia de extravio.
 								<br>
-								Es importante que leas detenidamente la lista de los delitos que presentamos a continuación, si el hecho que deseas denunciar no se encuentra listado, será necesario acudir directamente a alguna de nuestras Agencias del Ministerio Público a realizar la denuncia correspondiente, ya que por este medio no podrá ser atendida.
+								{{-- Es importante que leas detenidamente la lista de los delitos que presentamos a continuación, si el hecho que deseas denunciar no se encuentra listado, será necesario acudir directamente a alguna de nuestras Agencias del Ministerio Público a realizar la denuncia correspondiente, ya que por este medio no podrá ser atendida. --}}
                         </div>
                     </div>
                 </div>
@@ -170,15 +170,42 @@ Violencia familiar equiparada
                     <!-- Card body -->
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
                         <div class="card-body">
-							<option value="1">orientacion/asesoria</option>
-                            <option value="2">tramite de constancia de extravio</option>
+                            {{-- <option value="1">orientacion/asesoria</option> --}}
+                            <div class="card-body">
+                                    <strong>orientacion/asesoria</strong><br>
+                                El servicio de Asesoría Jurídica se proporciona a las víctimas del delito y a la población que lo solicite, con el fin de orientar en las diversas gestiones o procedimientos jurídicos que requieran.<br>
+                                <br>
+                                <strong>Opciones para realizar el trámite</strong> <br>
+                                presencial
+                                <br>
+                                <strong>Información complementaria</strong> <br>
+                                En caso de que la problemática no sea competencia de esta Unidad Administrativa, se canaliza a la instancia correspondiente mediante oficio.
+                                <br>
+                                <strong>Costo</strong> <br>
+                                Gratuito.
+                         
+                            </div>
+                            {{-- <option value="2">tramite de constancia de extravio</option> --}}
+                           
+                                    <div class="card-body">
+                                        <strong>Constancia de Hechos por Extravío</strong> <br>
+                                        Obtención de la Constancia de Hechos con la finalidad de hacer del conocimiento el extravío de documentos, o para hacer valido algún seguro como es el caso de robo de celular, robo de autopartes o robo a repartidores en cuantías menores, sin prejuzgar la veracidad de los hechos asentados, es decir no se abrirá una línea de investigación. 
+                                        <br>
+                                        <strong>Costo</strong> <br>
+                                        Gratuito.
+                                        <br>
+                                        <strong>Opciones para realizar el trámite </strong> <br>
+                                        Presencial. 
+                                 
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
                 <!-- Accordion card -->
 
                 <!-- Accordion card -->
-                <div class="card">
+                {{-- <div class="card">
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingThree">
@@ -205,9 +232,9 @@ Violencia familiar equiparada
                      
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- Accordion card -->
-                <div class="card">
+                {{-- <div class="card">
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="heading">
@@ -232,7 +259,7 @@ Violencia familiar equiparada
                      
                         </div>
                     </div>
-				</div>
+				</div> --}}
 				 <!-- Accordion card -->
 				 <div class="card">
 
@@ -249,7 +276,7 @@ Violencia familiar equiparada
 						<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion">
 							<div class="card-body">
 								
-								<table class="table table-hover">
+								<table class="table table-bordered">
                                     <thead>
                                     <tr><th>documento/bien extraviado o robado</th><th>Requisitos (debera presentar original y una fotocopia de cada documento anotado )</th></tr>
                                     </thead>
