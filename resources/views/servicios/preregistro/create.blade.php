@@ -13,18 +13,27 @@
 		
 	}
 		
-    .modal-body {
+    .modal-content {
 	   width: 100%;
-	   height:100vh;
+	   /* height:100vh; */
        background: rgba(0, 0, 0,0.5);
-	   position:absolute ;
-	   top: 0;
+	    position:absolute ;
+	    top: 0;
 	   left: 0; 
-	    display: flex; 
+	    display: flex;  
+}
+		.modal-body {
+	   /* width: 100%; */
+	   /* height:100vh; */
+       background: rgba(0, 0, 0,0.5);
+	    position:absolute ;
+	    top: 0;
+	   left: 0; 
+	    display: flex;  
 
 	   
-	   /* visibility: hidden;
-	   opacity: 0; */
+	   /* visibility: hidden; */
+	   /* opacity: 0; */
 
 }
 

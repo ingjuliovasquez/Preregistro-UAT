@@ -210,8 +210,8 @@ Violencia familiar equiparada
                 <div class="card">
 
                     <!-- Card header -->
-                    <div class="card-header" role="tab" id="headingThree">
-                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="card-header" role="tab" id="heading">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             <h5 class="mb-0">
                                 Constancia de Hechos por Extravío <i class="fa fa-angle-down rotate-icon"></i>
                             </h5>
@@ -219,22 +219,61 @@ Violencia familiar equiparada
                     </div>
 
                     <!-- Card body -->
-                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingfour" data-parent="#accordion">
                         <div class="card-body">
-                            El servicio de Asesoría Jurídica se proporciona a las víctimas del delito y a la población que lo solicite, con el fin de orientar en las diversas gestiones o procedimientos jurídicos que requieran.<br>
-							<br>
-                            <strong>Opciones para realizar el trámite</strong> <br>
-                            presencial
-                            <br>
-                            <strong>Información complementaria</strong> <br>
-                            En caso de que la problemática no sea competencia de esta Unidad Administrativa, se canaliza a la instancia correspondiente mediante oficio.
+                            <strong>Descripción del Trámite</strong> <br>
+                            Obtención de la Constancia de Hechos con la finalidad de hacer del conocimiento el extravío de documentos, o para hacer valido algún seguro como es el caso de robo de celular, robo de autopartes o robo a repartidores en cuantías menores, sin prejuzgar la veracidad de los hechos asentados, es decir no se abrirá una línea de investigación. 
                             <br>
                             <strong>Costo</strong> <br>
-                            Gratuito.
+							Gratuito.
+                            <br>
+                            <strong>Opciones para realizar el trámite </strong> <br>
+                            Presencial. 
                      
                         </div>
                     </div>
-                </div>
+				</div>
+				 <!-- Accordion card -->
+				 <div class="card">
+
+						<!-- Card header -->
+						<div class="card-header" role="tab" id="heading">
+							<a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								<h5 class="mb-0">
+										Requisitos para solicitar acta de Hechos por extravío/robo <i class="fa fa-angle-down rotate-icon"></i>
+								</h5>
+							</a>
+						</div>
+	
+						<!-- Card body -->
+						<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion">
+							<div class="card-body">
+								
+								<table class="table table-hover">
+                                    <thead>
+                                    <tr><th>documento/bien extraviado o robado</th><th>Requisitos (debera presentar original y una fotocopia de cada documento anotado )</th></tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr><td>psaporte</td><td>acta de nacimiento, identificacion oficial</td></tr>
+                                    <tr><td>Credencial de trabajo/gaffete</td><td>nombramiento,oficio de acreditacion como trabajador o credencial de trabajo,identificacion oficial</td></tr>
+                                    <tr><td>tarjeta de credito/debito</td><td>estado de cuenta,impresion de ultimos movimientos,identificacion oficial</td></tr>
+                                    <tr><td>Telefono celular</td><td>documento que contenga imei y descripcion del telefono, factura o nota de compra, identificacion oficial </td></tr>
+                                    <tr><td>equipo de trabajo(telefonos celulares,tabletas electronicas,rdios de intercomunicacion,etc)</td><td>documento de resguardo de equipo, identificacion oficial </td></tr>
+                                    <tr><td>permiso de transito para emplacamiento taxis</td><td>factura del vehiculo, consesion, tarjeta de circulacion, identificacion oficial </td></tr>
+                                    <tr><td>factura de vehiculo,motocicleta</td><td>tarjeta de circulacion, ultimo pago de tenencia o derechos, identificacion oficial </td></tr>
+                                    <tr><td>tarjeta de circulacion</td><td>fctura ultimo pago de tenencia o derechos</td></tr>
+                                    <tr><td>placas de circulacion</td><td>fctura ultimo pago de tenencia o derechos</td></tr>
+                                    <tr><td>licencia de conducir estatal</td><td>base de datos emitida por la direccion general de transito y vialidad</td></tr>
+                                    <tr><td>licencia de conducir federal</td><td>datos de la licencia</td></tr>
+                                    <tr><td>otros documentos</td><td>oficio dirigido al fiscal orientador en turno con la descripcion del documento</td></tr>
+                                    <tr><td>Certificado de alumbramiento</td><td>debera acudir la madre personalmente a realiar el tramite con identificacion oficial y documento expedido por el hospital o lugar de atencion medica-alta, nota de pago</td></tr>
+                                    </tbody>
+                                    </table>
+								
+						 
+							</div>
+						</div>
+					</div>
             </div>
             <!--/.Accordion wrapper-->
 
