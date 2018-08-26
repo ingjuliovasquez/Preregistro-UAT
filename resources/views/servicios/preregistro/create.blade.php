@@ -197,7 +197,7 @@
 								<a href="http://fiscaliaveracruz.gob.mx/"id="btnCancel" class="btn btn-primary">Cancelar</a>
 								{{-- <button  type="submit" id="guardar" class="btn  btn-primary"><i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
 								{{-- <button  type="button" id="guardar1"  class="btn  btn-primary"><i id="icon2" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
-								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i>
+								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar','data-toggle="tooltip" data-placement="right" title="para crear el registro debe seleccionar el campo de aceptar las politicas de privacidad y el campo no soy un robot!"' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i>
 								{{-- {!!Form::submit('Prueba',array('class' => 'btn btn-primary ', 'id'=>'prueba'))  'id'=>'cargando'!!} --}}
 								{{-- <button id="prueba" type="button" class="btn btn-primary">prueba</button> --}}
 							<br>
