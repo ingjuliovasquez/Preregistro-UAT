@@ -176,6 +176,7 @@
 					@else --}}
 					{{ Form::textarea('narracion', old('narracion'), ['class' => 'form-control form-control-sm', 'size' => '30x10', 'data-validation'=>'length', 'data-validation-length'=>'20-5000','required']) }}
 					{{-- @endif --}}
+				 </div>
 					<div class="text-xs-center">
 						<br>
 						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo no soy un robot!" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
@@ -185,8 +186,7 @@
 							<br>
 					<input type="checkbox" id="c1" name="terms" required value="1">
                     <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto y he leido la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo de aceptar las politicas de privacidad!">Política de Privacidad </a></span></label>
-				    </div>
-				</div>
+				    </div>				
 			</div>
 			<div class="boxtwo">
 				<div class="row">
@@ -254,6 +254,66 @@
 <script>
 		$(document).ready(function(){
 			$('[data-toggle="tooltip"]').tooltip();
+
+		//funcionalidad persona tipo acta, contancia de extravio y especifique
+		$(".showPer").hide();
+			$(".otross").hide();
+
+			$("#idRazon2").change(function(){												
+				if($("#idRazon2").val()==4){									
+					$(".showPer").show();					
+					if($( "#tipoActa").val() =="OTRO DOCUMENTO"){						
+						$(".otross").show();
+					}										            
+				}
+				else if($("#idRazon2").val()==2){					
+					$(".showPer").hide();
+					$(".otross").hide();
+				}else{
+					$(".showPer").hide();
+					$(".otross").hide();
+				}
+			});
+
+			$("#tipoActa").change(function(){									
+				if($("#tipoActa").val()=="OTRO DOCUMENTO"){					
+					$(".otross").show();
+				}else{
+					$(".otross").hide();
+				}
+			});
+			//fin persona
+
+			//funcionalidad empresa tipo acta, contancia de extravio y especifique
+			$(".shows").hide();
+			$(".tipActa").hide();
+
+			$("#idRazon1").change(function(){												
+				if($("#idRazon1").val()==4){									
+					$(".shows").show();	
+					if($("#tipoActaEmpresa").val()=="OTRO DOCUMENTO"){						
+						$(".tipActa").show();
+				}									            
+				}
+				else if($("#idRazon1").val()==2){					
+					$(".shows").hide();
+					$(".tipActa").hide();
+				}else{
+					$(".shows").hide();
+					$(".tipActa").hide();
+				}
+			});
+
+			$("#tipoActaEmpresa").change(function(){									
+				if($("#tipoActaEmpresa").val()=="OTRO DOCUMENTO"){
+					$(".tipActa").show();
+				}else{
+					$(".tipActa").hide();
+				}
+			});
+			//fin empresa
+
+
 		});
 		</script>
 
@@ -262,8 +322,6 @@
 $(document).ready(function(){
   $('#modalQuickView').modal('show')
 });
-
-
 </script>
 
 	<script>
@@ -286,42 +344,12 @@ $(document).ready(function(){
 	
 			}
 
-		// });
-		console.log("Golaksd");
+		// });		
 	});
+
+
 });
-// 	$('#form.registro').submit(function (e, params) {
-// 		   // $('#icon').show();
-// 		   var localParams = params || {};
-   
-// 		   if (!localParams.send) {
-// 			   e.preventDefault();
-   
-// 		   }
-   
-// 	   swal({
-// 				   title: "Confirmación de guardado",
-// 				   text: "¿Seguro que los datos son correctos?",
-// 				   type: "info",
-// 				   showCancelButton: true,
-// 				   confirmButtonText: "Si",
-// 				   confirmButtonColor:"#424242",
-// 				   cancelButtonText: "No",
-// 				   closeOnConfirm: true
-// 			   }, function (isContinuar) {
-// 				   if (isContinuar) {
-// 					   $('#icon').show();
-// 					   $('#guardar').attr('disabled','true');
-// 					   $('#btnCancel').attr('disabled','true');
-// 					   $('#btnCancel').removeAttr('href');
-// 					   $(e.currentTarget).trigger(e.type, { 'send': true });
-// 				   } else {              
-// 					   $('#icon').hide();
-// 					   $('#guardar').removeAttr('disabled');
-// 					   $('#btnCancel').attr('href','{{url('/solicitudes')}}');
-// 			   }
-// 		   });
-//    });
+
    </script>
 
 <script>
@@ -337,5 +365,9 @@ $(document).ready(function(){
 
 
  </script>
+
+
+
+
 		
 @endpush

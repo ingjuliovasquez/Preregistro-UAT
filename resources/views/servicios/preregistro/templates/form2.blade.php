@@ -37,9 +37,9 @@
         }
     });
 
-    // $.validate({
-    //     lang : 'es'
-    // });
+    $.validate({
+        lang : 'es'
+    });
 
 
     </script>

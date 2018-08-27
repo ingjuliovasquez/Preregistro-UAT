@@ -92,7 +92,7 @@
     
                         <!-- Card body -->
                         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                            <div class="card-body">
+                            <div class="card-body" style="color:white;">
                                     La Fiscalía General del Estado de veracruz, mediante su Unidad de Orientación, Atención y Resolución Inmediata, ofrece esta moderna plataforma para ayudarle en su orientacion/asesoria	o en el tramite de constncia de extravio.
                                     <br>
                                    
@@ -115,7 +115,7 @@
     
                         <!-- Card body -->
                         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
-                            <div class="card-body">
+                            <div class="card-body" style="color:white;">
                                 <stronge>1. orientacion/asesoria</stronge>
 
                               <div class="card-body">
@@ -219,9 +219,9 @@
         
                             <!-- Card body -->
                             <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion">
-                                <div class="card-body">
+                                <div class="card-body" style="color:white;">
                                     
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered" style="color:white;">
                                         <thead>
                                         <tr><th>documento/bien extraviado o robado</th><th>Requisitos (debera presentar original y una fotocopia de cada documento anotado )</th></tr>
                                         </thead>

@@ -174,35 +174,34 @@
 	</div>
 		
 	<!--solo si es solicitud de hechos-->
-	<div  id="tipodeActa1">
-		<div class="col-12"  >
-			<div class="form-group" >
-					{!! Form::label('tipoActaEmpresa', 'Seleccione el tipo de constancia de extravío que requiere', ['class' => 'col-form-label-sm']) !!}
-					{!! Form::select('tipoActaEmpresa', array('PASAPORTE' => 'PASAPORTE', 
-					'CARTERA' => 'CARTERA' , 
-					'CREDENCIAL DE TRABAJO/GAFFETE'=>'CREDENCIAL DE TRABAJO/GAFFETE',
-					'TARJETA DE CRÉDITO/DÉBITO'=>'TARJETA DE CRÉDITO/DÉBITO'     ,
-					'TELEFONO CELULAR'=>'TELEFONO CELULAR', 
-					'EQUIPO DE TRABAJO(CELULARES,RADIOS,ETC)'=> 'EQUIPO DE TRABAJO(CELULARES,RADIOS,ETC)',
-					'PERMISO DE TRANSITO PARA EMPLACAMIENTO DE TAXIS'=> 'PERMISO DE TRANSITO PARA EMPLACAMIENTO DE TAXIS',
-					'FACTURA DE VEHÍCULO/MOTOCICLETA'  => 'FACTURA DE VEHÍCULO/MOTOCICLETA',
-					'TARJETA DE CIRCULACION' =>  'TARJETA DE CIRCULACION' ,
-					'PLACAS DE CIRCULACIÓN' => 'PLACAS DE CIRCULACIÓN',
-					'LICENCIA DE CONDUCIR ESTATAL' => 'LICENCIA DE CONDUCIR ESTATAL',
-					'LICENCIA DE CONDUCIR FEDERAL' => 'LICENCIA DE CONDUCIR FEDERAL' ,
-					'DOCUMENTO/BIEN EXTRAVIADO O ROBADO' => 'DOCUMENTO/BIEN EXTRAVIADO O ROBADO',
-					'CERTIFICADO DE ALUMBRAMIENTO' => 'CERTIFICADO DE ALUMBRAMIENTO' ,
-					'OTRO DOCUMENTO' => 'OTRO DOCUMENTO'), null, ['class' => 'form-control form-control-sm','data-validation'=>'required']) !!}
-			</div>
+	<div class="col-4 shows">
+		<div class="form-group" >
+				{!! Form::label('tipoActaEmpresa', 'Tipo de constancia de extravío que requiere', ['class' => 'col-form-label-sm']) !!}
+				{!! Form::select('tipoActaEmpresa', array('PASAPORTE' => 'PASAPORTE', 
+				'CARTERA' => 'CARTERA' , 
+				'CREDENCIAL DE TRABAJO/GAFFETE'=>'CREDENCIAL DE TRABAJO/GAFFETE',
+				'TARJETA DE CRÉDITO/DÉBITO'=>'TARJETA DE CRÉDITO/DÉBITO'     ,
+				'TELEFONO CELULAR'=>'TELEFONO CELULAR', 
+				'EQUIPO DE TRABAJO(CELULARES,RADIOS,ETC)'=> 'EQUIPO DE TRABAJO(CELULARES,RADIOS,ETC)',
+				'PERMISO DE TRANSITO PARA EMPLACAMIENTO DE TAXIS'=> 'PERMISO DE TRANSITO PARA EMPLACAMIENTO DE TAXIS',
+				'FACTURA DE VEHÍCULO/MOTOCICLETA'  => 'FACTURA DE VEHÍCULO/MOTOCICLETA',
+				'TARJETA DE CIRCULACION' =>  'TARJETA DE CIRCULACION' ,
+				'PLACAS DE CIRCULACIÓN' => 'PLACAS DE CIRCULACIÓN',
+				'LICENCIA DE CONDUCIR ESTATAL' => 'LICENCIA DE CONDUCIR ESTATAL',
+				'LICENCIA DE CONDUCIR FEDERAL' => 'LICENCIA DE CONDUCIR FEDERAL' ,
+				'DOCUMENTO/BIEN EXTRAVIADO O ROBADO' => 'DOCUMENTO/BIEN EXTRAVIADO O ROBADO',
+				'CERTIFICADO DE ALUMBRAMIENTO' => 'CERTIFICADO DE ALUMBRAMIENTO' ,
+				'OTRO DOCUMENTO' => 'OTRO DOCUMENTO'), null, ['class' => 'form-control form-control-sm','data-validation'=>'required']) !!}
 		</div>
-		<div class="col-12 otros" id="divOtroDoc">
-			<div class="form-group">
-				{!! Form::label('otroEmpresa', 'Especifique', ['class' => 'col-form-label-sm']) !!}
-				{!! Form::text('otroEmpresa', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Especifique', 'data-validation'=>'required']) !!}
-				<div class="help-block with-errors"></div>
-			</div>
-		</div>	
 	</div>
+
+<div class="col-4 tipActa">
+		<div class="form-group">
+			{!! Form::label('otroEmpresa', 'Especifique', ['class' => 'col-form-label-sm']) !!}
+			{!! Form::text('otroEmpresa', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Especifique','data-validation-error-msg'=>'Campo requerido', 'data-validation'=>'required']) !!}
+			<div class="help-block with-errors"></div>
+		</div>
+</div>
 </div>
 
 
