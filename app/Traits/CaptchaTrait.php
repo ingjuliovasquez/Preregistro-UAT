@@ -11,7 +11,7 @@ trait CaptchaTrait {
         if($value){
  
             $remoteip = $_SERVER['REMOTE_ADDR'];
-            $secret   = env('RECAPTCHA_PUBLIC_KEY');
+            $secret   = env('RECAPTCHA_PRIVATE_KEY');
  
             $recaptcha = new ReCaptcha($secret);
  
