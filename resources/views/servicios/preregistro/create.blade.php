@@ -179,7 +179,7 @@
 				 </div>
 					<div class="text-xs-center">
 						<br>
-						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo no soy un robot!" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
+						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo no soy un robot!" data-sitekey="6LfVbW0UAAAAABd-bwr2bCf-HjYeSukilMTdJ9XT"></div>
 						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
 					</div>
 					<div class="text-xs-center">

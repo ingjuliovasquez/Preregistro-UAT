@@ -65,9 +65,9 @@
                 <!--/.Carousel Wrapper-->
               </div>
               <div class="col-lg-7">
-                <h2 class="h2-responsive product-name" >
+                <h3 class="h2-responsive product-name" >
                   <strong>Bienvenidos a PRE-REGISTRO UAT</strong>
-                </h2>
+                </h3>
                 <h6 class="h4-responsive" >
                   <span class="green-text">
                     <strong>Unidad de Orientación, Analisis y Resolución Inmediata</strong>
