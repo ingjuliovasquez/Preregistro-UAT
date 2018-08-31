@@ -165,13 +165,13 @@ $("#idEstado2").change(function(event){
 			$("#idMunicipio2").empty();
 			$("#idMunicipio2").append("<option value=''>Seleccione un municipio</option>");
 			for(i=0; i<response.length; i++){
-				$("#idMunicipio2").append("<option value='"+response[i].id+"'> "+response[i].nombre+"</option>");
+				$("#idMunicipio2").append("<option value='"+response[o].id+"'> "+response[i].nombre+"</option>");
 			}
 		});
 	}
 });
 
-$("#idMunicipio2").change(function(event){
+$("#idMunicipio2").change(function(evento){
 	// municipio = $(this).val();
 	
 		$.ajax({
@@ -185,7 +185,7 @@ $("#idMunicipio2").change(function(event){
 				// $("#idEstado").val(json.estado.idEstado).trigger('change.select2');
 	
 	
-				var html3 = "<option value=''>Seleccione un municipio</option>";
+				var html3 = "<option value='1'>Seleccione un municipio</option>";
 				// for (var clave in json.municipios){
 				// 	 if (json.municipios.hasOwnProperty(clave)) {
 				// 	   html3 += "<option value='"+clave+"'> "+json.municipios[clave]+"</option>";
