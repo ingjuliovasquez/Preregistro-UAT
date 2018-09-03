@@ -70,13 +70,13 @@
                 </h3>
                 <h6 class="h4-responsive" >
                   <span class="green-text">
-                    <strong>Unidad de Orientación, Analisis y Resolución Inmediata</strong>
+                    <strong>Unidad de Orientación, Análisis y Resolución Inmediata</strong>
                   </span>
                 
                 </h6>
     
                 <!--Accordion wrapper-->
-                <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="accordion" id="accordion" role="" aria-multiselectable="true">
     
                     <!-- Accordion card -->
                     <div class="card">
@@ -93,7 +93,7 @@
                         <!-- Card body -->
                         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
                             <div class="card-body" style="color:white;">
-                                    La Fiscalía General del Estado de veracruz, mediante su Unidad de Orientación, Atención y Resolución Inmediata, ofrece esta moderna plataforma para ayudarle en su orientacion/asesoria	o en el tramite de constncia de extravio.
+                                La Fiscalía General del Estado de Veracruz, mediante su Unidad de Orientación, Atención y Resolución Inmediata, ofrece esta moderna plataforma para ayudarle en su orientación/asesoría o en el trámite de constancia de extravió.
                                     <br>
                                    
                             </div>
@@ -108,7 +108,7 @@
                         <div class="card-header" role="tab" id="headingTwo">
                             <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <h5 class="mb-0">
-                                    servicios  <i class="fa fa-angle-down rotate-icon"></i>
+                                    Servicios  <i class="fa fa-angle-down rotate-icon"></i>
                                 </h5>
                             </a>
                         </div>
@@ -116,30 +116,30 @@
                         <!-- Card body -->
                         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
                             <div class="card-body" style="color:white;">
-                                <stronge>1. orientacion/asesoria</stronge>
+                                <stronge>1. orientación/asesoría </stronge>
 
                               <div class="card-body">
                                 El servicio de Asesoría Jurídica se proporciona a las víctimas del delito y a la población que lo solicite, con el fin de orientar en las diversas gestiones o procedimientos jurídicos que requieran.<br>
                                 <br>
                                 <strong>Opciones para realizar el trámite</strong> <br>
-                                presencial
-                                <br>
+                                Presencial
+                                <br><br>
                                 <strong>Información complementaria</strong> <br>
-                                En caso de que la problemática no sea competencia de esta Unidad Administrativa, se canaliza a la instancia correspondiente mediante oficio.
-                                <br>
+                                En caso de que la problemática no sea competencia de esta Unidad Administrativa, se canaliza a la instancia correspondiente.
+                                <br><br>
                                 <strong>Costo</strong> <br>
                                 Gratuito.
                          
                               </div>
 
-                                <stronge>2. tramite de constancia de extravio</stronge>
+                                <stronge>2. Tramite de constancia de extravió</stronge>
                                 <div class="card-body">
                                    
                                     Obtención de la Constancia de Hechos con la finalidad de hacer del conocimiento el extravío de documentos, o para hacer valido algún seguro como es el caso de robo de celular, robo de autopartes o robo a repartidores en cuantías menores, sin prejuzgar la veracidad de los hechos asentados, es decir no se abrirá una línea de investigación. 
-                                    <br>
+                                    <br><br>
                                     <strong>Costo</strong> <br>
                                     Gratuito.
-                                    <br>
+                                    <br><br>
                                     <strong>Opciones para realizar el trámite </strong> <br>
                                     Presencial. 
                              
@@ -223,22 +223,23 @@
                                     
                                     <table class="table table-bordered" style="color:white;">
                                         <thead>
-                                        <tr><th>documento/bien extraviado o robado</th><th>Requisitos (debera presentar original y una fotocopia de cada documento anotado )</th></tr>
+                                        <tr><th>Documento/bien extraviado o robado</th><th>Requisitos (deberá presentar original y una fotocopia de cada documento anotado)</th></tr>
                                         </thead>
                                         <tbody>
-                                        <tr><td>psaporte</td><td>acta de nacimiento, identificacion oficial</td></tr>
-                                        <tr><td>Credencial de trabajo/gaffete</td><td>nombramiento,oficio de acreditacion como trabajador o credencial de trabajo,identificacion oficial</td></tr>
-                                        <tr><td>tarjeta de credito/debito</td><td>estado de cuenta,impresion de ultimos movimientos,identificacion oficial</td></tr>
-                                        <tr><td>Telefono celular</td><td>documento que contenga imei y descripcion del telefono, factura o nota de compra, identificacion oficial </td></tr>
-                                        <tr><td>equipo de trabajo(telefonos celulares,tabletas electronicas,rdios de intercomunicacion,etc)</td><td>documento de resguardo de equipo, identificacion oficial </td></tr>
-                                        <tr><td>permiso de transito para emplacamiento taxis</td><td>factura del vehiculo, consesion, tarjeta de circulacion, identificacion oficial </td></tr>
-                                        <tr><td>factura de vehiculo,motocicleta</td><td>tarjeta de circulacion, ultimo pago de tenencia o derechos, identificacion oficial </td></tr>
-                                        <tr><td>tarjeta de circulacion</td><td>fctura ultimo pago de tenencia o derechos</td></tr>
-                                        <tr><td>placas de circulacion</td><td>fctura ultimo pago de tenencia o derechos</td></tr>
-                                        <tr><td>licencia de conducir estatal</td><td>base de datos emitida por la direccion general de transito y vialidad</td></tr>
-                                        <tr><td>licencia de conducir federal</td><td>datos de la licencia</td></tr>
-                                        <tr><td>otros documentos</td><td>oficio dirigido al fiscal orientador en turno con la descripcion del documento</td></tr>
-                                        <tr><td>Certificado de alumbramiento</td><td>debera acudir la madre personalmente a realiar el tramite con identificacion oficial y documento expedido por el hospital o lugar de atencion medica-alta, nota de pago</td></tr>
+                                        <tr><td>Pasaporte</td><td>Acta de nacimiento, identificación oficial</td></tr>
+                                        <tr><td>Credencial de trabajo/gafete</td><td>Nombramiento, oficio de acreditación como trabajador o credencial de trabajo, identificación oficial</td></tr>
+                                        <tr><td>Tarjeta de crédito/debito</td><td>Estado de cuenta, impresión de últimos movimientos, identificación oficial</td></tr>
+                                        <tr><td>Teléfono celular</td><td>Documento que contenga imei y descripción del teléfono, factura o nota de compra, identificación oficial </td></tr>
+                                        <tr><td>Equipo de trabajo(teléfonos celulares, tabletas electrónicas, radios de intercomunicación, etc)</td><td>Documento de resguardo de equipo, identificación oficial </td></tr>
+                                        <tr><td>Permiso de tránsito para emplacamiento taxis</td><td>Factura del vehículo, concesión, tarjeta de circulación, identificación oficial </td></tr>
+                                        <tr><td>Factura de vehículo, motocicleta</td><td>Tarjeta de circulación, último pago de tenencia o derechos, identificación oficial </td></tr>
+                                        <tr><td>Tarjeta de circulación</td><td>Factura último pago de tenencia o derechos</td></tr>
+                                        <tr><td>Placas de circulación</td><td>Factura último pago de tenencia o derechos</td></tr>
+                                        <tr><td>Licencia de conducir estatal</td><td>Base de datos emitida por la dirección general de tránsito y vialidad</td></tr>
+                                        <tr><td>Licencia de conducir federal</td><td>Datos de la licencia</td></tr>
+                                        <tr><td>Otros documentos</td><td>Oficio dirigido al fiscal orientador en turno con la descripción del documento</td></tr>
+                                        <tr><td>Certificado de alumbramiento</td><td>Deberá acudir la madre personalmente a realizar el tramite con identificación oficial y documento expedido por el hospital o lugar de atención medica-alta, nota de pago</td></tr>
+
                                         </tbody>
                                         </table>
                                     
