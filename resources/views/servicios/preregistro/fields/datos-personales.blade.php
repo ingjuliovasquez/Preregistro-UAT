@@ -56,7 +56,7 @@
 	<div class="col-4">
 		<div class="form-group">
 			{!! Form::label('curp', 'C.U.R.P.', ['class' => 'col-form-label-sm']) !!}
-			{!! Form::text('curp', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el C.U.R.P.','data-validation'=>'custom' ,'data-validation-regexp'=>'^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$','data-validation-error-msg'=>'CURP inválido','data-toggle="tooltip" data-placement="top" title="El campo CURP se genera automáticamente , verifique si esta correcto!"','required']) !!}
+			{!! Form::text('curp', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el C.U.R.P.','data-validation'=>'custom' ,'data-validation-regexp'=>'^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$','data-validation-error-msg'=>'CURP inválido','data-toggle="tooltip" data-placement="top" title="El campo CURP se genera automáticamente. ¡Verifique si esta correcto!"','required']) !!}
 		</div>
 	</div>
 
@@ -66,11 +66,11 @@
 					<div class="row">
 				<div class="col">
 			{!! Form::label('rfc2', 'R.F.C.', ['class' => 'col-form-label-sm']) !!}
-			{!! Form::text('rfc2', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el R.F.C.','data-validation'=>'required' ,'data-validation-length'=>'8','data-validation-error-msg'=>'RFC inválido' ,'data-toggle="tooltip" data-placement="top" title="El campo RFC se genera automáticamente , verifique si esta correcto!"','required']) !!}
+			{!! Form::text('rfc2', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el R.F.C.','data-validation'=>'required' ,'data-validation-length'=>'8','data-validation-error-msg'=>'RFC inválido' ,'data-toggle="tooltip" data-placement="top" title="El campo RFC se genera automáticamente. ¡Verifique si esta correcto!"','required']) !!}
 				</div>
 			<div class="col">
-					{!! Form::label('homo2', 'Homo', ['class' => 'col-form-label-sm']) !!}
-				{!! Form::text('homo2', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese el R.F.C.' ,'data-validation-length'=>'8','data-toggle="tooltip" data-placement="top" title="El campo HOMO clave se genera automáticamente , verifique si esta correcto!"','data-validation-error-msg'=>'RFC inválido']) !!}
+					{!! Form::label('homo2', 'Homoclave', ['class' => 'col-form-label-sm']) !!}
+				{!! Form::text('homo2', null, ['class' => 'form-control form-control-sm', 'placeholder' => 'Ingrese la homoclave' ,'data-validation-length'=>'8','data-toggle="tooltip" data-placement="top" title="El campo HOMO clave se genera automáticamente. ¡Verifique si esta correcto!"','data-validation-error-msg'=>'RFC inválido']) !!}
 			</div>
 		</div>
 	</div>
@@ -196,7 +196,7 @@
 	<div class="col-4">
 		<div class="form-group">
 			 {!! Form::label('correo2', 'Correo', ['class' => 'col-form-label-sm']) !!}
-			 {!! Form::email('correo2', null, ['class' => 'form-control form-control-sm emailc', 'placeholder' => 'Si desea recibir su folio por email','data-validation'=>'custom','data-validation-optional'=>'true','data-validation'=>'email','data-validation-error-msg'=>'Proporcione un correo válido. Ejemplo: nombre@gmail.com','data-toggle="tooltip" data-placement="top" title="Se recomienda ingresar una cuenta de correo para que reciba su número de folio, el cual se le solicitara al momento de presentarse en alguna de las Unidades de Atención Temprana!"' ]) !!}
+			 {!! Form::email('correo2', null, ['class' => 'form-control form-control-sm emailc', 'placeholder' => 'Si desea recibir su folio por email','data-validation'=>'custom','data-validation-optional'=>'true','data-validation'=>'email','data-validation-error-msg'=>'Proporcione un correo válido. Ejemplo: nombre@gmail.com','data-toggle="tooltip" data-placement="top" title="Se recomienda ingresar una cuenta de correo para que reciba su número de folio, el cual se le solicitara al momento de presentarse en alguna de las Unidades de Atención Temprana."' ]) !!}
 		 </div>
 	</div>
 	<div class="col-4">

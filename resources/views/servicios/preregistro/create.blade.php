@@ -179,13 +179,13 @@
 				 </div>
 					<div class="text-xs-center">
 						<br>
-						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo no soy un robot!" data-sitekey="6LfVbW0UAAAAABd-bwr2bCf-HjYeSukilMTdJ9XT"></div>
+						<div class="g-recaptcha" id="recaptcha" required data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo no soy un robot" data-sitekey="6LetiWkUAAAAALWahmssFmAqYKMLdZvKHiCGE2kz"></div>
 						{{-- <div class="g-recaptcha" data-sitekey="{{ env("6Ld1x2gUAAAAAC7oBRctVblxzQsQ99ucG09R3gAR") }}"></div> --}}
 					</div>
 					<div class="text-xs-center">
 							<br>
 					<input type="checkbox" id="c1" name="terms" required value="1">
-                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto y he leido la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo de aceptar las politicas de privacidad!">Política de Privacidad </a></span></label>
+                    <label for="c1"><span class="thrv-inline-text" data-css="tve-u-165b45ca8792212">Acepto y he leido la <a href="http://fiscaliaveracruz.gob.mx:2021/WEB%20FGE/Avisos%20De%20Privacidad%20Integrales%20Fge%202017/AI-51-DTRANSP-ASESORIAS.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="Debe seleccionar el campo de aceptar las políticas de privacidad">Política de Privacidad </a></span></label>
 				    </div>				
 			</div>
 			<div class="boxtwo">
@@ -197,7 +197,7 @@
 								<a href="http://fiscaliaveracruz.gob.mx/"id="btnCancel" class="btn btn-primary">Cancelar</a>
 								{{-- <button  type="submit" id="guardar" class="btn  btn-primary"><i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
 								{{-- <button  type="button" id="guardar1"  class="btn  btn-primary"><i id="icon2" class="fa fa-spinner fa-spin text-white" style="display: none"></i> Guardar</button> --}}
-								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar','data-toggle="tooltip" data-placement="right" title="para crear el registro debe seleccionar el campo de aceptar las politicas de privacidad y el campo no soy un robot!"' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i>
+								{!!Form::submit('Guardar',array('class' => 'btn btn-primary ', 'id'=>'guardar','data-toggle="tooltip" data-placement="right" title="Para crear el registro debe seleccionar el campo no soy un robot y el campo de aceptar las políticas de privacidad."' ))!!} <i id="icon" class="fa fa-spinner fa-spin text-white" style="display: none"></i>
 								{{-- {!!Form::submit('Prueba',array('class' => 'btn btn-primary ', 'id'=>'prueba'))  'id'=>'cargando'!!} --}}
 								{{-- <button id="prueba" type="button" class="btn btn-primary">prueba</button> --}}
 							<br>
