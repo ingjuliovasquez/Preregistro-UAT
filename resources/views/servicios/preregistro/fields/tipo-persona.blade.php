@@ -93,7 +93,7 @@
                         <!-- Card body -->
                         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
                             <div class="card-body" style="color:white;">
-                                La Fiscalía General del Estado de Veracruz, mediante su Unidad de Orientación, Atención y Resolución Inmediata, ofrece esta moderna plataforma para ayudarle en su orientación/asesoría o en el trámite de constancia de extravió.
+                                La Fiscalía General del Estado de Veracruz, mediante su Unidad de Orientación, Atención y Resolución Inmediata, ofrece esta moderna plataforma para ayudarle en su orientación/asesoría o en el trámite de constancia de extravío .
                                     <br>
                                    
                             </div>
@@ -116,7 +116,7 @@
                         <!-- Card body -->
                         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
                             <div class="card-body" style="color:white;">
-                                <stronge>1. orientación/asesoría </stronge>
+                                <stronge>1. Orientación/Asesoría </stronge>
 
                               <div class="card-body">
                                 El servicio de Asesoría Jurídica se proporciona a las víctimas del delito y a la población que lo solicite, con el fin de orientar en las diversas gestiones o procedimientos jurídicos que requieran.<br>
@@ -132,10 +132,10 @@
                          
                               </div>
 
-                                <stronge>2. Tramite de constancia de extravió</stronge>
+                                <stronge>2. Trámite de constancia de extravío</stronge>
                                 <div class="card-body">
                                    
-                                    Obtención de la Constancia de Hechos con la finalidad de hacer del conocimiento el extravío de documentos, o para hacer valido algún seguro como es el caso de robo de celular, robo de autopartes o robo a repartidores en cuantías menores, sin prejuzgar la veracidad de los hechos asentados, es decir no se abrirá una línea de investigación. 
+                                    Obtención de la Constancia de Hechos con la finalidad de hacer del conocimiento el extravío de documentos o para hacer valido algún seguro como es el caso de robo de celular, robo de autopartes o robo a repartidores en cuantías menores, sin prejuzgar la veracidad de los hechos asentados, es decir no se abrirá una línea de investigación. 
                                     <br><br>
                                     <strong>Costo</strong> <br>
                                     Gratuito.
@@ -226,19 +226,19 @@
                                         <tr><th>Documento/bien extraviado o robado</th><th>Requisitos (deberá presentar original y una fotocopia de cada documento anotado)</th></tr>
                                         </thead>
                                         <tbody>
-                                        <tr><td>Pasaporte</td><td>Acta de nacimiento, identificación oficial</td></tr>
-                                        <tr><td>Credencial de trabajo/gafete</td><td>Nombramiento, oficio de acreditación como trabajador o credencial de trabajo, identificación oficial</td></tr>
-                                        <tr><td>Tarjeta de crédito/debito</td><td>Estado de cuenta, impresión de últimos movimientos, identificación oficial</td></tr>
-                                        <tr><td>Teléfono celular</td><td>Documento que contenga imei y descripción del teléfono, factura o nota de compra, identificación oficial </td></tr>
-                                        <tr><td>Equipo de trabajo(teléfonos celulares, tabletas electrónicas, radios de intercomunicación, etc)</td><td>Documento de resguardo de equipo, identificación oficial </td></tr>
-                                        <tr><td>Permiso de tránsito para emplacamiento taxis</td><td>Factura del vehículo, concesión, tarjeta de circulación, identificación oficial </td></tr>
-                                        <tr><td>Factura de vehículo, motocicleta</td><td>Tarjeta de circulación, último pago de tenencia o derechos, identificación oficial </td></tr>
-                                        <tr><td>Tarjeta de circulación</td><td>Factura último pago de tenencia o derechos</td></tr>
-                                        <tr><td>Placas de circulación</td><td>Factura último pago de tenencia o derechos</td></tr>
-                                        <tr><td>Licencia de conducir estatal</td><td>Base de datos emitida por la dirección general de tránsito y vialidad</td></tr>
-                                        <tr><td>Licencia de conducir federal</td><td>Datos de la licencia</td></tr>
-                                        <tr><td>Otros documentos</td><td>Oficio dirigido al fiscal orientador en turno con la descripción del documento</td></tr>
-                                        <tr><td>Certificado de alumbramiento</td><td>Deberá acudir la madre personalmente a realizar el tramite con identificación oficial y documento expedido por el hospital o lugar de atención medica-alta, nota de pago</td></tr>
+                                        <tr><td>Pasaporte</td><td>Acta de nacimiento, identificación oficial.</td></tr>
+                                        <tr><td>Credencial de trabajo/gafete</td><td>Nombramiento, oficio de acreditación como trabajador o credencial de trabajo, identificación oficial.</td></tr>
+                                        <tr><td>Tarjeta de crédito/débito</td><td>Estado de cuenta, impresión de últimos movimientos, identificación oficial.</td></tr>
+                                        <tr><td>Teléfono celular</td><td>Documento que contenga IMEI y descripción del teléfono, factura o nota de compra, identificación oficial. </td></tr>
+                                        <tr><td>Equipo de trabajo(teléfonos celulares, tabletas electrónicas, radios de intercomunicación, etc.)</td><td>Documento de resguardo de equipo, identificación oficial. </td></tr>
+                                        <tr><td>Permiso de tránsito para emplacamiento taxis</td><td>Factura del vehículo, concesión, tarjeta de circulación, identificación oficial. </td></tr>
+                                        <tr><td>Factura de vehículo, motocicleta</td><td>Tarjeta de circulación, último pago de tenencia o derechos, identificación oficial. </td></tr>
+                                        <tr><td>Tarjeta de circulación</td><td>Factura último pago de tenencia o derechos, identificación oficial.</td></tr>
+                                        <tr><td>Placas de circulación</td><td>Factura último pago de tenencia o derechos, identificación oficial.</td></tr>
+                                        <tr><td>Licencia de conducir estatal</td><td>Base de datos emitida por la dirección general de tránsito y vialidad, identificación oficial.</td></tr>
+                                        <tr><td>Licencia de conducir federal</td><td>Datos de la licencia, identificación oficial.</td></tr>
+                                        <tr><td>Otros documentos</td><td>Oficio dirigido al fiscal orientador en turno con la descripción del documento, identificación oficial.</td></tr>
+                                        <tr><td>Certificado de alumbramiento</td><td>Deberá acudir la madre personalmente a realizar el trámite con identificación oficial y documento expedido por el hospital o lugar de atención medica-alta, nota de pago, identificación oficial.</td></tr>
 
                                         </tbody>
                                         </table>
