@@ -107,11 +107,11 @@
                     <tr>
                         <td>Nombre de la Empresa:{{$DatosRegistros->nombre}}</td>
                         <td rowspan="4" class="folio">{{ $DatosRegistros->folio}}</td>
-                        <td rowspan="4"><img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->margin(0)->size(150)->generate(url('FormatoRegistro/'.$DatosRegistros->id))) !!}"></td>
+                        {{-- <td rowspan="4"><img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->margin(0)->size(150)->generate(url('FormatoRegistro/'.$DatosRegistros->id))) !!}"></td> --}}
                         {{-- <td>{!! QrCode::format('png')->margin(0)->size(100)->generate(url('/')) !!}</td> --}}
                     </tr>
                     <tr>
-                        <td>RFC: {{$DatosRegistros->rfc}}</td>
+                        <td>R.F.C.: {{$DatosRegistros->rfc}}</td>
                     </tr>
                     <tr>
                         <td>Representante legal: {{$DatosRegistros->representanteLegal." ".$DatosRegistros->primerAp." ".$DatosRegistros->segundoAp}}</td>
@@ -149,9 +149,8 @@
 
                     <tr class="text-muted">
                         <td>
-                            UAT XALAPA
-                           <br> Circuito Rafael Guízar y Valencia No. 707, Colonia Reserva Territorial C.P. 91096 Xalapa, Veracruz.
-                            Horario. 9:00 - 15:00 hrs y 16:00 - 18:00 hrs.  
+                            CONSULTA DE DIRECCIONES: <a href="{{url('direcciones.uat')}}">https:://www.direcciones/UAT.com.mx </a>
+                           
                         </td>
                         {{-- <td>
                             <p>UIPJ XALAPA</p>
@@ -181,7 +180,7 @@
                                <br> •	Alimentar la base de datos del sistema electrónico generado de Citas para Atención en las Unidades de Atención Temprana de la Fiscalía General del Estado.
                                <br> •	Registrar la solicitud de cita para atención en cualquiera de las Unidades de Atención Temprana. 
                                <br> •	Para generar el código de registro único y alfanumérico asignado a la cita solicitada.
-                               <br> •	    Para generar el código QR el cual almacenara información de lo registrado en la plataforma.
+                               <br> •	Para generar el código QR el cual almacenara información de lo registrado en la plataforma.
                               <br>  •	Para generar el comprobante de cita correspondiente.
                                 De manera adicional, utilizaremos su información personal para la siguiente finalidad que nos permite y facilita brindarle una mejor atención: 
                                 •	Generación de informes estadísticos.
@@ -196,11 +195,3 @@
         </div>
     </body>
 </html>
-
-
-{{-- 
-    
-    Salmos 1:1-3
-    La persona que lee regularmente la Palabra de Dios es
-     “como un árbol plantado al lado de corrientes de agua, que da su propio fruto en su estación y cuyo follaje no se marchita, y todo lo que haga tendrá éxito
-    --}}
